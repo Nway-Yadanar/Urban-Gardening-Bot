@@ -22,7 +22,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-model_name = os.getenv("MODEL_NAME", "KhunPop/Gardening")
+model_name = os.getenv("MODEL_NAME", "TheSheBots/UrbanGardening")
 api_key = os.getenv("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")
 
 if not api_key:
