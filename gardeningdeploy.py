@@ -7,14 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1Vpi6I3gKFTNpGn_K0fz5rjfWL08U9vxj
 """
 
-!pip install streamlit
+pip install streamlit
 
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-!pip install python-dotenv
+pip install python-dotenv
 
-!pip install torch
+pip install torch
 import torch
 from PIL import Image
 import os
