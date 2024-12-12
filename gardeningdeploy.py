@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Vpi6I3gKFTNpGn_K0fz5rjfWL08U9vxj
 """
 
-pip install streamlit
+pip install -r requirements.txt
 
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
