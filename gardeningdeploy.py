@@ -19,11 +19,12 @@ import torch
 from PIL import Image
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
-
-model_name = os.getenv("MODEL_NAME", "TheSheBots/UrbanGardening")
-api_key = os.getenv("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")
+tokenizer = AutoTokenizer.from_pretrained("KhunPop/Gardening")
+model = AutoModelForCausalLM.from_pretrained(
+    "KhunPop/Gardening",
+    device_map="auto",
+    torch_dtype=torch.bfloat16,
+)
 
 if not api_key:
     st.error("Hugging Face API key is not set. Please check your .env file or environment variables.")
