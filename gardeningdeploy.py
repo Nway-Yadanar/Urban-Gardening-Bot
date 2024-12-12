@@ -7,14 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1Vpi6I3gKFTNpGn_K0fz5rjfWL08U9vxj
 """
 
-pip install -r requirements.txt
+# !pip install streamlit
 
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-pip install python-dotenv
+# !pip install python-dotenv
 
-pip install torch
+# !pip install torch
 import torch
 from PIL import Image
 import os
@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 model_name = os.getenv("MODEL_NAME", "KhunPop/Gardening")
-api_key = os.getenv('KHUNPOP_SECRET')
+api_key = os.getenv("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")
 
 if not api_key:
     st.error("Hugging Face API key is not set. Please check your .env file or environment variables.")
