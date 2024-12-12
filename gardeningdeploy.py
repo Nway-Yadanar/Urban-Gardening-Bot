@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 model_name = os.getenv("MODEL_NAME", "KhunPop/Gardening")
-api_key = os.getenv("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")
+api_key = os.getenv('KHUNPOP_SECRET')
 
 if not api_key:
     st.error("Hugging Face API key is not set. Please check your .env file or environment variables.")
